@@ -26,6 +26,8 @@ var btn_sel = document.getElementById("btn-sel");
 var modal_cup = document.getElementById("modal-cup");
 var btn_cup = document.getElementById("btn-cup");
 
+var btn_brochure = document.getElementById("btn-bro");
+
 // Abrir modal al hacer clic en el botón
 btn_1.addEventListener("click", function() {
   modal_1.style.display = "block";
@@ -109,3 +111,15 @@ window.addEventListener("click", function(event) {
     modal_cup.style.display = "none";
   }
 });
+
+
+
+
+
+
+
+//Abrir brochure en otra pagina 
+btn_brochure.addEventListener('click', function(){
+  var urlArchivo = 'files/Brochure.pdf';
+  window.open(urlArchivo, '_blank');
+});            
