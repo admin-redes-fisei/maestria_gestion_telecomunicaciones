@@ -25,6 +25,9 @@ var modal_sel = document.getElementById("modal-sel");
 var btn_sel = document.getElementById("btn-sel");
 var modal_cup = document.getElementById("modal-cup");
 var btn_cup = document.getElementById("btn-cup");
+var btn_malla = document.getElementById("btn-malla")
+var btn_brochure = document.getElementById("btn-bro");
+var btn_pro = document.getElementById("btn-pro");
 
 // Abrir modal al hacer clic en el botón
 btn_1.addEventListener("click", function() {
@@ -109,3 +112,22 @@ window.addEventListener("click", function(event) {
     modal_cup.style.display = "none";
   }
 });
+
+//Abrir malla curricular en otra pestaña
+btn_malla.addEventListener('click', function() {
+  var urlArchivo = 'files/malla_curricular.pdf';
+
+  window.open(urlArchivo, '_blank');
+});
+
+//Abrir brochure en otra pagina 
+btn_brochure.addEventListener('click', function(){
+  var urlArchivo = 'files/Brochure.pdf';
+  window.open(urlArchivo, '_blank');
+}); 
+
+//Abrir req en otra pagina
+btn_pro.addEventListener('click', function(){
+  var urlArchivo = 'files/req.pdf';
+  window.open(urlArchivo, '_blank');
+}); 
